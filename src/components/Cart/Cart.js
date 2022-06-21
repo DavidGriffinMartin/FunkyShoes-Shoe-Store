@@ -18,7 +18,7 @@ const Cart = (props) => {
     return (
       <div className={classes.cartItem} key={item[0]._id}>
         {item[0].name}
-        <span className={classes.price}>${item[0].price}</span>
+        <span className={classes.price}>${item[0].price.toFixed(2)}</span>
       </div>
     );
   });
@@ -27,7 +27,7 @@ const Cart = (props) => {
     <Modal onClose={props.onClose}>
       <div className={classes.total}>
         <span>Total Amount</span>
-        <span>${totalAmount}</span>
+        <span>${totalAmount.toFixed(2)}</span>
       </div>
       {capturedItems}
       <div className={classes.actions}>
