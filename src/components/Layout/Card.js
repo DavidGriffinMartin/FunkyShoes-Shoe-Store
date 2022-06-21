@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { login, logout } from "../services/firebase";
+// import { login, logout } from "../services/firebase";
 import CartIcon from "../Cart/CartIcon";
 
 const MediaCard = (props, id) => {
@@ -36,7 +36,7 @@ const MediaCard = (props, id) => {
   const history = useHistory();
   const URL = "https://pipiopiproj.herokuapp.com/items/";
 
-  const items = props.item;
+  // const items = props.item;
 
   const deleteItem = async (id) => {
     await fetch(URL + id, {
@@ -52,9 +52,15 @@ const MediaCard = (props, id) => {
     history.push("/");
   };
 
+  // function to check to see if the ID gets printed?
+  const addToCartHandler = (e, id) => {
+    console.log("clicked!");
+    // console.log(e.target, e.target._id);
+  };
+
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <a href={props.item.linkto} target="_blank">
+      <a href={props.item.linkto} target="_blank" rel="noreferrer">
         <CardMedia
           component="img"
           height="250"
@@ -74,8 +80,14 @@ const MediaCard = (props, id) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">
-          +<CartIcon />
+        <Button
+          size="small"
+          onClick={(e) => {
+            props.addToCartFn(e, props.item._id);
+          }}
+        >
+          +
+          <CartIcon />
         </Button>
         {props.user ? isAdminFn() : null}
       </CardActions>

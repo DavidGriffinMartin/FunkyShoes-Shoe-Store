@@ -32,7 +32,10 @@ const Header = (props) => {
               <li onClick={login}>Login</li>
             )}
           </ul>
-          <HeaderCartButton onClick={props.showCart} />
+          <HeaderCartButton
+            onClick={props.showCart}
+            itemsArr={props.itemsArr}
+          />
         </div>
       </header>
       <div className={classes["main-image"]}>

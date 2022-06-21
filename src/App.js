@@ -35,10 +35,42 @@ const App = () => {
     setItems(data);
   };
 
+  // creating a state for newItemsArr
+  const [newItemsArr, setNewItemsArr] = useState([]);
+
+  // Click handler fn for Cart.js trashcan
+  const clickHandlerRemove = (e) => {
+    console.log(e.target);
+    setNewItemsArr([]);
+    const deletedItems = newItemsArr.filter((item) => console.log(item));
+  };
+
+  // function to check to see if the ID gets printed?
+
+  const addToCartHandler = (e, id) => {
+    const itemArr = items.filter((item) => item._id === id);
+    setNewItemsArr((previousState) => {
+      const newState = [...previousState, itemArr];
+      return newState;
+    });
+    // console.log(id);
+  };
+
   return (
     <Fragment>
-      {cartVisible && <Cart onClose={hideCartHandler} />}
-      <Header user={user} getShoes={getShoes} showCart={revealCartHandler} />
+      {cartVisible && (
+        <Cart
+          onClose={hideCartHandler}
+          itemsArr={newItemsArr}
+          removeHandler={clickHandlerRemove}
+        />
+      )}
+      <Header
+        user={user}
+        getShoes={getShoes}
+        showCart={revealCartHandler}
+        itemsArr={newItemsArr.length}
+      />
       <Route exact path="/">
         <div className="main-container">
           <Main
@@ -47,6 +79,7 @@ const App = () => {
             className="container"
             getShoes={getShoes}
             items={items}
+            addToCartFn={addToCartHandler}
           />
         </div>
       </Route>
