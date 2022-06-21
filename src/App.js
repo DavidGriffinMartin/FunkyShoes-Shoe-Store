@@ -72,6 +72,7 @@ const App = () => {
         itemsArr={newItemsArr.length}
       />
       <Route exact path="/">
+        <h3 className="main-new">New</h3>
         <div className="main-container">
           <Main
             user={user}

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { login, logout } from "../services/firebase";
-import headerShowImage from "../../image/header1.jpg";
+import headerShowImage from "../../image/Rectangle 2.png";
 import classes from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const Header = (props) => {
     if (props.user.email === "danewjkim@gmail.com") {
       return (
         <Link style={{ textDecoration: "none" }} to="/create">
-          <li>Create</li>
+          <li className={classes.headerCreate}>Create</li>
         </Link>
       );
     }
@@ -20,7 +20,7 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <Link style={{ textDecoration: "none", color: "white" }} to="/">
-          <h1>Funky Shoes</h1>
+          <h1 className={classes.logo}>FunkyShoes</h1>
         </Link>
         <div className={classes.combined}>
           <ul>
@@ -40,6 +40,13 @@ const Header = (props) => {
       </header>
       <div className={classes["main-image"]}>
         <img src={headerShowImage} alt="..." />
+        <div className={classes.container}>
+          <h1>Funky Shoes</h1>
+          <h1>for Funky Feet</h1>
+          <h3>
+            <a href="#">Shop Now</a>
+          </h3>
+        </div>
       </div>
     </Fragment>
   );

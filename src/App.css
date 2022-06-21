@@ -3,4 +3,20 @@
   flex-direction: row wrap;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.main-new {
+  margin-left: 100px;
+  color: #eb3863;
+  font-family: "Prosto One";
+  font-weight: 400;
+  font-size: 40px;
+  background-color: #f5f5f5;
+}
+
+.addtocartbtn {
+  background-color: #eb3863;
+  color: white;
+  padding: 8px 25px;
 }

@@ -7,7 +7,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-// import { login, logout } from "../services/firebase";
 import CartIcon from "../Cart/CartIcon";
 
 const MediaCard = (props, id) => {
@@ -86,8 +85,7 @@ const MediaCard = (props, id) => {
             props.addToCartFn(e, props.item._id);
           }}
         >
-          +
-          <CartIcon />
+          <h4 className="addtocartbtn">Add to Cart</h4>
         </Button>
         {props.user ? isAdminFn() : null}
       </CardActions>

@@ -23,7 +23,7 @@
   font: inherit;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid #32ca24;
+  border: 1px solid #eb3863;
   padding: 0.5rem 2rem;
   border-radius: 25px;
   margin-left: 1rem;
@@ -37,10 +37,19 @@
 }
 
 .actions .button--alt {
-  color: #32ca24;
+  color: #eb3863;
+  margin-top: 20px;
 }
 
 .actions .button {
-  background-color: #32ca24;
+  background-color: #eb3863;
   color: white;
+}
+
+.price {
+  float: right;
+}
+
+i {
+  color: #eb3863;
 }

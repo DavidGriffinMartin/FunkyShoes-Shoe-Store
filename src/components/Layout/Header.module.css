@@ -4,8 +4,8 @@
   left: 0;
   width: 100%;
   height: 5rem;
-  background-color: #32ca24;
-  color: white;
+  background-color: #f5f5f5;
+  color: #eb3863;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,13 +13,21 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
+.logo {
+  font-family: "Press Start 2P", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  color: #eb3863;
+}
+
 .combined {
   display: flex;
 }
 
 .main-image {
   width: 100%;
-  height: 25rem;
+  height: 40rem;
   z-index: 0;
   overflow: hidden;
   margin-bottom: 10px;
@@ -28,7 +36,49 @@
 .main-image img {
   width: 100%;
   height: 110%;
-  object-fit: fill;
+  object-fit: cover;
+}
+
+.container {
+  margin-top: -480px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.container h1 {
+  color: white;
+  font-size: 75px;
+  font-family: "Prosto One", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.container h3 {
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 65px;
+  padding-right: 65px;
+  font-family: "Poppins";
+  color: #1a71f3;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 33px;
+  background-color: white;
+  border: white 5px solid;
+}
+.container a {
+  text-decoration: none;
+  color: #eb3863;
+}
+
+.container a:hover {
+  cursor: pointer;
+}
+
+.headerCreate {
+  color: black;
 }
 
 ul {
@@ -39,5 +89,6 @@ li {
   margin-right: 1.5rem;
   cursor: pointer;
   font-weight: 600;
-  color: white;
+  color: black;
+  font-size: 18px;
 }
