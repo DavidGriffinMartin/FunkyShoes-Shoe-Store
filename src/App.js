@@ -38,8 +38,12 @@ const App = () => {
   // creating a state for newItemsArr
   const [newItemsArr, setNewItemsArr] = useState([]);
 
-  // Creating a state for the total amount
-  // const [itemsArr, setItemsArr] = useState([]);
+  // Click handler fn for Cart.js trashcan
+  const clickHandlerRemove = (e) => {
+    console.log(e.target);
+    setNewItemsArr([]);
+    const deletedItems = newItemsArr.filter((item) => console.log(item));
+  };
 
   // function to check to see if the ID gets printed?
 
@@ -52,11 +56,15 @@ const App = () => {
     // console.log(id);
   };
 
-  // useEffect(() => addToCartHandler, []);
-
   return (
     <Fragment>
-      {cartVisible && <Cart onClose={hideCartHandler} itemsArr={newItemsArr} />}
+      {cartVisible && (
+        <Cart
+          onClose={hideCartHandler}
+          itemsArr={newItemsArr}
+          removeHandler={clickHandlerRemove}
+        />
+      )}
       <Header
         user={user}
         getShoes={getShoes}

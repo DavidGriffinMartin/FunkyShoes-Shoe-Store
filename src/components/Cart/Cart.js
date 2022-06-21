@@ -5,23 +5,40 @@ import { useState, useEffect } from "react";
 const Cart = (props) => {
   const [totalAmount, setTotalAmount] = useState(0);
 
-  const cartItems = props.itemsArr.map((item) => {
-    setTotalAmount(totalAmount + item[0].price);
-    console.log(item[0].name);
+  useEffect(() => {
+    let newTotal = 0;
+    for (const item of props.itemsArr) {
+      newTotal += item[0].price;
+    }
+    setTotalAmount(newTotal);
+  }, [props.itemsArr]);
+
+  const capturedItems = props.itemsArr.map((item) => {
+    console.log(item[0]._id);
+    return (
+      <div className={classes.cartItem} key={item[0]._id}>
+        {item[0].name}
+        <span className={classes.price}>${item[0].price}</span>
+      </div>
+    );
   });
-  // return <ul className={classes["cart-items"]}></ul>;
-  // useEffect(() => {
-  //   setTotalAmount(totalAmount);
-  // }, [props.itemsArr]);
 
   return (
     <Modal onClose={props.onClose}>
-      {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
-        <span>{totalAmount}</span>
+        <span>${totalAmount}</span>
       </div>
+      {capturedItems}
       <div className={classes.actions}>
+        {
+          <i
+            className="fa-solid fa-trash-can fa-1x"
+            onClick={(e) => {
+              props.removeHandler(e);
+            }}
+          ></i>
+        }
         <button className={classes["button--alt"]} onClick={props.onClose}>
           Close
         </button>
