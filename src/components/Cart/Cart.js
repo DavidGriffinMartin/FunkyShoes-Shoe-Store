@@ -30,10 +30,11 @@ const Cart = (props) => {
         <span>${totalAmount.toFixed(2)}</span>
       </div>
       {capturedItems}
+      {props.orderComplete}
       <div className={classes.actions}>
         {
           <i
-            className="fa-solid fa-trash-can fa-1x"
+            className="fa-solid fa-trash-can fa-2x"
             onClick={(e) => {
               props.removeHandler(e);
             }}
@@ -42,7 +43,14 @@ const Cart = (props) => {
         <button className={classes["button--alt"]} onClick={props.onClose}>
           Close
         </button>
-        <button className={classes.button}>Order</button>
+        <button
+          onClick={(e) => {
+            props.orderHandler(e);
+          }}
+          className={classes.button}
+        >
+          Order
+        </button>
       </div>
     </Modal>
   );
