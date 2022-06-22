@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import CartIcon from "../Cart/CartIcon";
+import classes from "./Card.module.css";
 
 const MediaCard = (props, id) => {
   const [newItem, setNewItem] = useState(null);
@@ -26,7 +26,7 @@ const MediaCard = (props, id) => {
             removeItem(e, props.item._id);
           }}
         >
-          <i className="fa-solid fa-trash-can fa-3x"></i>
+          <i className="trash fa-solid fa-trash-can fa-3x"></i>
         </Button>
       );
     }

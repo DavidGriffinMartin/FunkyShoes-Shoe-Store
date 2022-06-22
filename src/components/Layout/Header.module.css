@@ -84,6 +84,8 @@
 ul {
   list-style: none;
   display: flex;
+  align-self: center;
+  margin-top: 14px;
 }
 li {
   margin-right: 1.5rem;

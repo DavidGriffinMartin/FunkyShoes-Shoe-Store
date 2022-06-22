@@ -44,7 +44,7 @@ const Header = (props) => {
           <h1>Funky Shoes</h1>
           <h1>for Funky Feet</h1>
           <h3>
-            <a href="#">Shop Now</a>
+            <a href="#shopnow">Shop Now</a>
           </h3>
         </div>
       </div>

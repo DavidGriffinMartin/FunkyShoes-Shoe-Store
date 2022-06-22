@@ -53,16 +53,29 @@ const App = () => {
       const newState = [...previousState, itemArr];
       return newState;
     });
-    // console.log(id);
+  };
+
+  // Order complete function
+  const [orderComplete, setOrderComplete] = useState("");
+
+  const orderCompleteHandler = (e) => {
+    setOrderComplete("Your order has been completed");
+    setNewItemsArr([]);
+    setTimeout(() => {
+      setOrderComplete("");
+    }, 3000);
+    // alert("Your order is complete");
   };
 
   return (
     <Fragment>
       {cartVisible && (
         <Cart
+          orderComplete={orderComplete}
           onClose={hideCartHandler}
           itemsArr={newItemsArr}
           removeHandler={clickHandlerRemove}
+          orderHandler={orderCompleteHandler}
         />
       )}
       <Header
@@ -72,7 +85,9 @@ const App = () => {
         itemsArr={newItemsArr.length}
       />
       <Route exact path="/">
-        <h3 className="main-new">New</h3>
+        <h3 id="shopnow" className="main-new">
+          New
+        </h3>
         <div className="main-container">
           <Main
             user={user}
