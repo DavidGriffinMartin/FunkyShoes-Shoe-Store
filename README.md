@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# **FunkyShoes**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Description](#description)
+- [Deployed Web App](#deployed-web-app)
+- [User Story](#user-story)
+- [Getting Started](#getting-started)
+- [Technologies](#technologies)
+- [Future Improvements](#future-improvements)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+FunkyShoes is a fun ecommerce website that allows the user to purchase funky shoes to match their funky personality.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployed Web App
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Check out our deployed web application below:
 
-### `npm run build`
+Deployed Website:https://funkyshoes.netlify.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt text](./src/image/header.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt text](./src/image/body.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![alt text](./src/image/create.png)
 
-### `npm run eject`
+![alt text](./src/image/modal.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## User Story
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+As a consumer, I am constantly struggling to find new shoe products that are unique. Funky Shoes keeps me up to date with new shoes that are fun and not a clone of previous models.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navigate throughout the page. Add items to the cart by clicking on the "ADD TO CART" button. If you no longer wish to purchase the items you had selected, simply click on the cart button from the header and click the trash can logo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Bootstrap
+- Material UI
+- CSS
+- Figma
+- Google Fonts
 
-### Analyzing the Bundle Size
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+For future improvements I will include...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Individually delete items from the user's cart
+- Add a specific quantity of an item
+- Add a rating system from our users
+- Add a order history for the users
+- Add a search content by categories
+- Add a navigation by category
+- Add a search bar to search for individual items
+- Add a functionality to sort items by price

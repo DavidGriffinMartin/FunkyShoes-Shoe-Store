@@ -7,7 +7,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import classes from "./Card.module.css";
 
 const MediaCard = (props, id) => {
   const [newItem, setNewItem] = useState(null);
