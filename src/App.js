@@ -2,6 +2,7 @@ import { Route } from "react-router-dom";
 import { auth } from "./components/services/firebase";
 import React, { useState, useEffect, Fragment } from "react";
 import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
 import Main from "./components/Layout/Main";
 import Create from "./components/Layout/Create";
 import Cart from "./components/Cart/Cart";
@@ -102,6 +103,7 @@ const App = () => {
       <Route exact path="/create">
         <Create getShoes={getShoes} />
       </Route>
+      <Footer />
     </Fragment>
   );
 };
