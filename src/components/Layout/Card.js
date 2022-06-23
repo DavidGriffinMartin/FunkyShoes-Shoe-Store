@@ -43,11 +43,6 @@ const MediaCard = (props, id) => {
     history.push("/");
   };
 
-  // function to check to see if the ID gets printed?
-  // const addToCartHandler = (e, id) => {
-  //   console.log("clicked!");
-  // console.log(e.target, e.target._id);
-  // };
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -57,6 +52,7 @@ const MediaCard = (props, id) => {
     };
   }, []);
 
+  // This is where we implemented the user auth to take away the add to cart btn
   const showCart = () => {
     if (!user) return;
     else {
