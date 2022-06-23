@@ -41,9 +41,7 @@ const App = () => {
 
   // Click handler fn for Cart.js trashcan
   const clickHandlerRemove = (e) => {
-    console.log(e.target);
     setNewItemsArr([]);
-    const deletedItems = newItemsArr.filter((item) => console.log(item));
   };
 
   // function to check to see if the ID gets printed?

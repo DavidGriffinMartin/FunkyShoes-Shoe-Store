@@ -13,8 +13,8 @@ const Cart = (props) => {
     setTotalAmount(newTotal);
   }, [props.itemsArr]);
 
+  // Items in the cart
   const capturedItems = props.itemsArr.map((item) => {
-    console.log(item[0]._id);
     return (
       <div className={classes.cartItem} key={item[0]._id}>
         {item[0].name}
