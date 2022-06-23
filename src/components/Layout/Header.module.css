@@ -60,7 +60,6 @@
   padding-left: 65px;
   padding-right: 65px;
   font-family: "Poppins";
-  color: #1a71f3;
   font-size: 22px;
   font-weight: bold;
   font-style: normal;
@@ -93,4 +92,25 @@ li {
   font-weight: 600;
   color: black;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 450px) {
+  .container h1 {
+    font-size: 30px;
+  }
+  .container h3 {
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .logo {
+    font-size: 8px;
+    margin-top: 8px;
+  }
+  .header {
+    justify-content: flex-start;
+  }
+  .combined li {
+    font-size: 10px;
+  }
 }

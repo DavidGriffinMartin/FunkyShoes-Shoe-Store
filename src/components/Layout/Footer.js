@@ -13,6 +13,7 @@ export default function Footer() {
             href="#!"
             role="button"
             target="_blank"
+            rel="noreferrer"
           >
             <MDBIcon className="icon" fab icon="facebook-f" />
           </a>
@@ -23,6 +24,7 @@ export default function Footer() {
             href="https://twitter.com/joerogan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
             role="button"
             target="_blank"
+            rel="noreferrer"
           >
             <MDBIcon className="icon" fab icon="twitter" />
           </a>
@@ -33,6 +35,7 @@ export default function Footer() {
             href="#!"
             role="button"
             target="_blank"
+            rel="noreferrer"
           >
             <MDBIcon className="icon" fab icon="google" />
           </a>
@@ -42,6 +45,7 @@ export default function Footer() {
             href="#!"
             role="button"
             target="_blank"
+            rel="noreferrer"
           >
             <MDBIcon className="icon" fab icon="instagram" />
           </a>
@@ -52,6 +56,7 @@ export default function Footer() {
             href="#!"
             role="button"
             target="_blank"
+            rel="noreferrer"
           >
             <MDBIcon className="icon" fab icon="linkedin-in" />
           </a>
@@ -62,6 +67,7 @@ export default function Footer() {
             href="https://github.com/DavidGriffinMartin/project3-frontend"
             role="button"
             target="_blank"
+            rel="noreferrer"
           >
             <MDBIcon className="icon" fab icon="github" />
           </a>
@@ -74,6 +80,7 @@ export default function Footer() {
           className="text-white"
           href="https://funkyshoes.netlify.app/"
           target="_blank"
+          rel="noreferrer"
         >
           FunkyShoes
         </a>
