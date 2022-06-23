@@ -12,6 +12,7 @@ export default function Footer() {
             style={{ backgroundColor: "#3b5998" }}
             href="#!"
             role="button"
+            target="_blank"
           >
             <MDBIcon className="icon" fab icon="facebook-f" />
           </a>
@@ -21,6 +22,7 @@ export default function Footer() {
             style={{ backgroundColor: "#55acee" }}
             href="https://twitter.com/joerogan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
             role="button"
+            target="_blank"
           >
             <MDBIcon className="icon" fab icon="twitter" />
           </a>
@@ -30,6 +32,7 @@ export default function Footer() {
             style={{ backgroundColor: "#dd4b39" }}
             href="#!"
             role="button"
+            target="_blank"
           >
             <MDBIcon className="icon" fab icon="google" />
           </a>
@@ -38,6 +41,7 @@ export default function Footer() {
             style={{ backgroundColor: "#ac2bac" }}
             href="#!"
             role="button"
+            target="_blank"
           >
             <MDBIcon className="icon" fab icon="instagram" />
           </a>
@@ -47,6 +51,7 @@ export default function Footer() {
             style={{ backgroundColor: "#0082ca" }}
             href="#!"
             role="button"
+            target="_blank"
           >
             <MDBIcon className="icon" fab icon="linkedin-in" />
           </a>
@@ -56,6 +61,7 @@ export default function Footer() {
             style={{ backgroundColor: "#333333" }}
             href="https://github.com/DavidGriffinMartin/project3-frontend"
             role="button"
+            target="_blank"
           >
             <MDBIcon className="icon" fab icon="github" />
           </a>
@@ -64,7 +70,11 @@ export default function Footer() {
 
       <div className="text-center p-3" style={{ backgroundColor: "#eb3863" }}>
         © 2022 Copyright:
-        <a className="text-white" href="https://funkyshoes.netlify.app/">
+        <a
+          className="text-white"
+          href="https://funkyshoes.netlify.app/"
+          target="_blank"
+        >
           FunkyShoes
         </a>
       </div>

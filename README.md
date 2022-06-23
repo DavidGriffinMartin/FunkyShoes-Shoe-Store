@@ -52,6 +52,7 @@ Navigate throughout the page. Add items to the cart by clicking on the "ADD TO C
 - Express
 - MongoDB
 - Mongoose
+- Firebase
 - Bootstrap
 - Material UI
 - CSS
