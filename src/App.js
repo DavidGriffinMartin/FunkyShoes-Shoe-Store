@@ -9,7 +9,7 @@ import Cart from "./components/Cart/Cart";
 import "./App.css";
 
 const App = () => {
-  const URL = "https://funkyshoes.netlify.app";
+  const URL = "https://funkyshoesbackend.herokuapp.com/items";
 
   // Modal States
   const [cartVisible, setCartVisible] = useState(false);

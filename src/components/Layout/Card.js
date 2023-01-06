@@ -26,7 +26,7 @@ const MediaCard = (props, id) => {
   };
 
   const history = useHistory();
-  const URL = "https://funkyshoes.netlify.app";
+  const URL = "https://funkyshoesbackend.herokuapp.com/items";
 
   // const items = props.item;
 
