@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const Create = (props) => {
   const history = useHistory();
 
-  const URL = "https://pipiopiproj.herokuapp.com/items/";
+  const URL = "https://funkyshoesbackend.herokuapp.com/items";
 
   const [form, setForm] = useState({
     name: "",
